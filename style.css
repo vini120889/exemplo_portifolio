@@ -1,0 +1,350 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --color-base-body: hsl(245, 14%, 15%);
+  --color-base-card: hsl(244, 13%, 21%);
+  --color-base-circle: hsl(120, 100%, 50%);
+  --color-base-tags: hsl(327, 35%, 68%);
+  --color-base-letter: hsl(249, 15%, 56%);
+  --color-base-js: hsl(55, 70%, 69%);
+  --color-base-shadow: hsl(0, 0, 0, 0.20);
+  --color-base-black: hsl(0, 0%, 0%, 1);
+}
+
+body{
+  color: var(--color-base-letter);
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.app{
+  width: 144.4rem;
+  height: 176.7rem;
+  background: var(--color-base-body);
+
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "profile projects projects"
+  "profile painel painel2"
+  "links posts posts"
+  "links publication publication"
+  ;
+}
+
+.profile, .projects, .painel, .painel2, .links, .posts, .publication, .tecnologie, .experience, .education{
+  border-radius: 2rem;
+  background: var(--color-base-card);
+  box-shadow: 2px 2px 2px 1px var(--color-base-shadow);
+}
+
+.profile{
+  width: 34.8rem;
+  height: 30.3rem;
+  background-color: var(--color-base-card);
+
+  grid-area: profile;
+   
+}
+
+.avatar{
+  width: 12.8rem;
+  height: 12.8rem;
+
+  border-radius: 12.8rem;
+  border: 2px solid var(--color-base-circle);
+
+  margin: 4.5rem 11rem 3rem;
+}
+
+.profile h1{
+  text-align: center;
+}
+
+.profile p{
+  text-align: center;
+  margin-top: 1rem;
+
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.projects{
+  width: 95.2rem;
+  height: 8.6rem;
+
+  margin-left: 6rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  grid-area: projects;
+}
+
+.projects h1{
+  font-size: 2rem;
+  padding: 3rem 0 3rem 3rem ;
+}
+
+.projects a{
+  padding: 3.4rem 3rem 3.4rem 0;
+  text-decoration: none;
+  color: var(--color-base-letter);
+}
+
+.painel{
+  width: 46.1rem;
+  height: 18.6rem;
+
+  padding: 3rem;
+  margin: 3rem 0 0 6rem;
+  margin-right: -0.8rem;
+
+  grid-area: painel;
+}
+
+.topo{
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.topo h2{
+  font-size: 1.6rem;
+}
+
+.first-p{
+  margin-top: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+
+.painel2{
+  width: 46.1rem;
+  height: 18.6rem;
+
+  padding: 3rem;
+  margin: 3rem 0 0 3rem;
+
+  grid-area: painel2;
+}
+
+.base{
+  display: flex;
+  align-items: center;
+
+  margin-top: 1.7rem;
+}
+
+.base p:first-of-type{
+  margin-right: 1.6rem;
+}
+
+.base p{
+  font-size: 1.4rem;
+}
+
+.star, .branch{
+  margin-right: 0.8rem;
+  
+}
+
+.ball{
+  width: 1.5rem;
+  height: 1.5rem;
+
+  margin-left: 18rem;
+  margin-right: 0.8rem;
+}
+
+.folder, .star, .branch{
+  stroke: var(--color-base-letter);
+}
+
+.posts{
+  width: 95.2rem;
+  height: 8.6rem;
+
+  margin: 3rem 0 0 6rem;
+  padding: 3rem 78.2rem 3rem 3rem;
+
+  grid-area: posts;
+}
+
+.posts h1{
+  font-size: 2rem;
+}
+
+.links{
+  width: 34.8rem;
+  height: 34.8rem;
+
+  margin-top: 3rem;
+  padding: 3rem 0 3rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  grid-area: links;
+}
+
+.links img{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.list a{
+  text-decoration: none;
+  color: var(--color-base-letter);
+  font-size: 1.3rem;
+}
+
+.publication{
+  width: 95.2rem;
+  height: 20rem;
+
+  margin-left: 6rem;
+
+  display: flex;
+  align-items: center;
+  grid-area: publication;
+}
+
+.publication .avatar{
+  margin: 3rem 2rem 4rem 3rem;
+}
+
+.text h1{
+  font-size: 1.8rem;
+}
+
+.text p{
+  margin-top: 1.1rem;
+  font-size: 1.4rem;
+}
+
+.text h2{
+  font-size: 1.6rem;
+
+  margin-top: 2.8rem;
+}
+
+.hashtag{
+  display: flex;
+  gap: 2rem;
+}
+
+.tecnologie{
+  width: 34.8rem;
+  height: 20.8rem;
+
+  margin-top: 3rem;
+}
+
+.tecnologie h1{
+  margin: 3rem 0 2.5rem 2rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas: 
+  "j r no"
+  "g gt h"
+  "c e rn"
+  ;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+
+  text-align: center;
+}
+
+.j, .r, .no, .g, .gt, .h, .c, .e, .rn{
+  width: 8.6rem;
+  height: 2.4rem;
+  
+  color: var(--color-base-black);
+
+  padding-top: 0.6rem;
+
+  border-radius: 3.0rem;
+  background: var(--color-base-tags);  
+}
+
+.r, .gt, .e, .no, .h, .rn{
+  margin-left: -2rem;
+}
+
+.experience{
+  width: 34.8rem;
+  height: 34.9rem;
+
+  margin-top: 3rem;
+}
+
+.experience h1{
+  padding: 3rem 18.7rem 0 2rem;
+
+  font-size: 2rem;
+}
+
+ul{
+  padding: 2rem 0 3rem 6rem;
+}
+
+.experience h2{
+  font-size: 1.4rem;
+}
+
+.experience p{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+li + li{
+  margin-top: 2rem;
+}
+
+.education{
+  width: 34.8rem;
+  height: 35.2rem;
+
+  margin-top: 3rem;
+}
+
+.education h1{
+  padding: 3rem 18.7rem 0 2rem;
+
+  font-size: 2rem;
+}
+
+.eeducation h2{
+  font-size: 1.4rem;
+}
+
+.education p{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
